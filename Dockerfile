@@ -1,9 +1,9 @@
 FROM node:14.4.0-alpine
 
-WORKDIR /perfin-frontend
+WORKDIR /perfin
 
 # add node_modules/.bin to $PATH
-ENV PATH /perfin-frontend/node_modules/.bin:$PATH
+ENV PATH /perfin/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json ./
